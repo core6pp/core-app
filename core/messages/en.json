@@ -1,0 +1,33 @@
+{
+  "brand": {
+    "name": "Core",
+    "tagline": "Merit, not noise."
+  },
+  "onboarding": {
+    "title": "Core Initiation",
+    "subtitle": "Pick the pillar that describes you best. You can post in all three — this just sets your home feed.",
+    "workshop": { "name": "Workshop", "desc": "Software, computing architecture, hardware repair, systems engineering." },
+    "lounge": { "name": "Lounge", "desc": "Gaming lore, character arcs, cinematography, design aesthetics." },
+    "nomad": { "name": "Nomad", "desc": "Travel documentation, real-world experience, cultural observation." }
+  },
+  "tiers": {
+    "observer": "Observer",
+    "participant": "Participant",
+    "consultant": "Consultant",
+    "architect": "Architect",
+    "grand_architect": "Grand Architect"
+  },
+  "profile": {
+    "changeUsername": "Change username",
+    "cooldownNotice": "You can change your name once every 14 days.",
+    "cooldownActive": "You already changed your name recently."
+  },
+  "vote": {
+    "up": "Upvote",
+    "down": "Downvote"
+  },
+  "moderation": {
+    "removedNotice": "This post was removed for not meeting Core's content standards.",
+    "lowQualityWarning": "Posts under 50 words with no engagement may be queued for review."
+  }
+}

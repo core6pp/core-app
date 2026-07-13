@@ -1,0 +1,6 @@
+{
+  "crons": [
+    { "path": "/api/agents/moderator", "schedule": "0 */10 * * *" },
+    { "path": "/api/agents/challenge", "schedule": "0 */14 * * *" }
+  ]
+}

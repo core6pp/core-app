@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Space Grotesk';
+  src: url('/fonts/SpaceGrotesk-Variable.woff2') format('woff2');
+  font-weight: 300 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans Arabic';
+  src: url('/fonts/IBMPlexSansArabic-Variable.woff2') format('woff2');
+  font-weight: 300 700;
+  font-display: swap;
+}
+
+:root {
+  color-scheme: dark; /* Core is dark-mode only, per spec — no light theme to maintain */
+}
+
+html,
+body {
+  background-color: theme('colors.bg.base');
+  color: theme('colors.ink.primary');
+}
+
+body {
+  font-family: theme('fontFamily.body');
+}
+
+/* Visible keyboard focus everywhere — quality floor, not optional polish */
+:focus-visible {
+  outline: 2px solid theme('colors.indigo.core');
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Tabular numerals for scores/timers so digit widths don't jitter on update */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
